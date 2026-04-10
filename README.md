@@ -1,3 +1,11 @@
 # End-to-End Deep Learning for Acoustic Pressure Field Prediction in Single-Element Transcranial Focused Ultrasound
 
 data source: https://aimi.stanford.edu/datasets/sinoct
+
+-----------------------------------------------------------------------------------------------------
+Abstract
+Transcranial focused ultrasound (tFUS) is a non-invasive therapeutic technology with growing applications in brain disorder and neuromodulation. However, accurate prediction of ultrasound propagation through the skull remains challenging because skull-induced aberration can cause pressure attenuation, focal shift, and focal deformation. Recently, artificial intelligence (AI) has shown strong potential in transcranial focused ultrasound research by greatly improving computational efficiency compared with conventional numerical methods. Emerging studies have explored deep learning to predict acoustic parameters such as insertion loss and pressure fields.
+Skull-induced aberration relates to transducer configuration. Unlike phased-array systems, single-element transducers cannot perform phase correction, making skull-induced aberration more pronounced and resulting in larger focal shift and deformation. To date, studies on transcranial pressure-field prediction for uncorrected tFUS remain limited, and the generalizability and performance of existing models under severe individual skull-induced aberration have yet to be fully validated.
+To address this problem, we develop an end-to-end deep learning framework (Figure A) that jointly predicts the insertion loss and the full pattern of acoustic pressure field map directly from skull CT scans. Comparison experiments show that the proposed method achieves state-of-the-art performance on both tasks, with a test-set L1 loss of 0.011 and MSE of 0.007 for pressure map prediction, and a peak pressure deviation of 17.60%. The model is able to generalizes to challenging cases with substantial focal shift and deformation (Figure B). This approach provides an efficient solution for subject-specific aberration prediction in single-element tFUS and may support real-time treatment planning. 
+
+<img width="2113" height="2551" alt="ius" src="https://github.com/user-attachments/assets/db4b5a82-af19-4c19-a1fc-f0bb1fffe96b" />
